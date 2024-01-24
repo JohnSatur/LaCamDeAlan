@@ -1,0 +1,33 @@
+<!-- TODO: Hacer que la clase 'blur-header' se agregue dinámicamente cuando el usuario haga 50% de scroll a la página -->
+
+<header class="header blur-header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">La cam de Alan</a>
+
+        <div class="nav__menu" id="nav-menu" [ngClass]="{'show-menu': showMenu}">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link" (click)="toggleNavbar()">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link" (click)="toggleNavbar()">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#Popular" class="nav__link" (click)="toggleNavbar()">Popular</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#explore" class="nav__link" (click)="toggleNavbar()">Explore</a>
+                </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close" (click)="toggleNavbar()">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle" (click)="toggleNavbar()">
+            <i class="ri-menu-fill"></i>
+        </div>
+    </nav>
+</header>
