@@ -121,3 +121,20 @@ img {
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }
+
+// Scrollbar
+
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 10%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 20%);
+
+  &:hover {
+    background-color: hsl(0, 0%, 30%);
+  }
+}
