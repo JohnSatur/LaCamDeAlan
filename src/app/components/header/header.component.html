@@ -1,28 +1,46 @@
 <!-- TODO: Hacer que la clase 'blur-header' se agregue dinámicamente cuando el usuario haga 50% de scroll a la página -->
 
+<!-- TODO: Mostrar una línea debajo de la pestaña que se encuentre activa -->
+
 <header class="header blur-header" id="header">
     <nav class="nav container">
         <a href="#" class="nav__logo">La cam de Alan</a>
 
-        <div class="nav__menu" id="nav-menu" [ngClass]="{'show-menu': showMenu}">
+        <div class="nav__menu show-menu" id="nav-menu" [ngClass]="{'show-menu': showMenu}">
+            <a href="#"><img src="../../../assets/img/logo-blanco.png" class="nav__mobile-logo" alt="Logo Alan Álvarez"></a>
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="#home" class="nav__link" (click)="toggleNavbar()">Home</a>
+                    <a href="#home" class="nav__link" (click)="toggleNavbar()">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#about" class="nav__link" (click)="toggleNavbar()">About</a>
+                    <a href="#about" class="nav__link" (click)="toggleNavbar()">Quién soy</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#Popular" class="nav__link" (click)="toggleNavbar()">Popular</a>
+                    <a href="#portfolio" class="nav__link" (click)="toggleNavbar()">Mis trabajo</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#explore" class="nav__link" (click)="toggleNavbar()">Explore</a>
+                    <a href="#services" class="nav__link" (click)="toggleNavbar()">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link" (click)="toggleNavbar()">Cotizar</a>
                 </li>
             </ul>
 
             <!-- Close button -->
             <div class="nav__close" id="nav-close" (click)="toggleNavbar()">
                 <i class="ri-close-line"></i>
+            </div>
+
+            <div class="nav__social">
+                <a href="#" class="nav__social-link">
+                    <i class="nav__social-icon ri-instagram-fill"></i>
+                </a>
+                <a href="#" class="nav__social-link">
+                    <i class="nav__social-icon ri-facebook-box-fill"></i>
+                </a>
+                <a href="#" class="nav__social-link">
+                    <i class="nav__social-icon ri-tiktok-fill"></i>
+                </a>
             </div>
         </div>
         <!-- Toggle button -->

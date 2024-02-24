@@ -1,53 +1,30 @@
-/*=============== HEADER & NAV ===============*/
+// Scrollup
 
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    background-color: hsla(0, 0%, 100%, .1);
+    padding: 6px;
+    display: inline-flex;
+    color: var(--title-color);
+    font-size: 1.25rem;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); // Safari
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s;
 
-/* Navigation for mobile devices */
+    &:hover {
+        transform: translateY(-.25rem);
+    }
+}
 
+.footer {
+    padding-block: 5rem 3rem;
+}
 
-/* Show menu */
-
-
-/* Add blur to header */
-
-
-/* Active link */
-
-
-/*=============== HOME ===============*/
-
-
-/*=============== BUTTON ===============*/
-
-
-/*=============== ABOUT ===============*/
-
-
-/*=============== POPULAR ===============*/
-
-
-/*=============== EXPLORE ===============*/
-
-
-/*=============== JOIN ===============*/
-
-
-/*=============== FOOTER ===============*/
-
-
-/*=============== SCROLL BAR ===============*/
-
-
-/*=============== SCROLL UP ===============*/
-
-
-/* Show Scroll Up */
-
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-
-
-/* For medium devices */
-
-
-/* For large devices */
+@media screen and (min-width: 1152px) {
+    .scrollup {
+        right: 3rem;
+    }
+}
