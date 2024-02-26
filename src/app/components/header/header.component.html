@@ -4,13 +4,13 @@
 
 <header class="header blur-header" id="header">
     <nav class="nav container">
-        <a href="#" class="nav__logo">La cam de Alan</a>
+        <a href="#" class="nav__logo">Alan Álvarez</a>
 
         <div class="nav__menu show-menu" id="nav-menu" [ngClass]="{'show-menu': showMenu}">
             <a href="#"><img src="../../../assets/img/logo-blanco.png" class="nav__mobile-logo" alt="Logo Alan Álvarez"></a>
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="#home" class="nav__link" (click)="toggleNavbar()">Inicio</a>
+                    <a routerLink="home" class="nav__link" (click)="toggleNavbar()">Inicio</a>
                 </li>
                 <li class="nav__item">
                     <a href="#about" class="nav__link" (click)="toggleNavbar()">Quién soy</a>
@@ -22,7 +22,7 @@
                     <a href="#services" class="nav__link" (click)="toggleNavbar()">Servicios</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#contact" class="nav__link" (click)="toggleNavbar()">Cotizar</a>
+                    <a routerLink="contact" class="nav__link" (click)="toggleNavbar()">Cotizar</a>
                 </li>
             </ul>
 
@@ -32,13 +32,13 @@
             </div>
 
             <div class="nav__social">
-                <a href="#" class="nav__social-link">
+                <a href="https://www.instagram.com/lacamdealann/" target="_blank" class="nav__social-link" (click)="toggleNavbar()">
                     <i class="nav__social-icon ri-instagram-fill"></i>
                 </a>
-                <a href="#" class="nav__social-link">
+                <a href="https://www.facebook.com/AlanZukoAlvarezHernandez" target="_blank" class="nav__social-link" (click)="toggleNavbar()">
                     <i class="nav__social-icon ri-facebook-box-fill"></i>
                 </a>
-                <a href="#" class="nav__social-link">
+                <a href="https://www.tiktok.com/@lacamdealann" target="_blank" class="nav__social-link" (click)="toggleNavbar()">
                     <i class="nav__social-icon ri-tiktok-fill"></i>
                 </a>
             </div>

@@ -1,0 +1,155 @@
+.contact {
+    min-height: 100vh;
+    background-color: var(--container-color);
+}
+
+.contact__form {
+    position: relative;
+}
+
+.contact__box {
+    position: relative;
+    width: 100%;
+    height: 58px;
+}
+
+.contact__input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--body-color);
+    border: 3px solid var(--text-color-light);
+    padding: .5rem 1.5rem;
+    color: white;
+    font-weight: var(--font-medium);
+    transition: border-color .4s, background-color .4s;
+
+    &:focus {
+        border-color: var(--white-color);
+    }
+
+    &:-webkit-autofill {
+        transition: background-color 6000s, color 6000s;
+    }
+}
+
+.contact__label {
+    position: absolute;
+    top: -16px;
+    left: 16px;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color-light);
+    background-color: var(--body-color);
+    padding: 8px;
+    transition: background-color .4s;
+}
+
+.contact__area {
+    height: 10rem;
+
+    textarea {
+        resize: none;
+        padding-top: 1.25rem;
+    }
+}
+
+.contact__send {
+    padding-block: 1.25rem;
+    cursor: pointer;
+}
+
+.contact__message {
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color-light);
+}
+
+// Home
+.home {
+    position: relative;
+    border-bottom: 8px solid var(--primary-color);
+}
+
+.home__rectangle {
+    width: 100%;
+    height: 220px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home__container {
+    padding-block: 1rem 3rem;
+}
+
+.perfil {
+    width: 250px;
+    height: 250px;
+    background-color: var(--body-color);
+    border: 8px solid var(--primary-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: background-color .4s;
+}
+
+.perfil__content {
+    width: 180px;
+    height: 180px;
+    border: 10px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(180deg,
+        hsl(226, 90%, 80%),
+        hsl(226, 90%, 30%),
+    );
+}
+
+.perfil__img {
+    width: 150px;
+}
+
+.home__perfil {
+    justify-self: center;
+}
+
+.home__data {
+    row-gap: .75rem;
+    text-align: center;
+}
+
+.home__name {
+    font-size: var(--biggest-font-size);
+}
+
+.home__profession {
+    font-size: var(--h2-font-size);
+}
+
+.home__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.home__social-link {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    transition: color .4s;
+
+    &:hover {
+        color: var(--white-color);
+    }
+}
+
+.home__button {
+    justify-self: center;
+}
