@@ -52,9 +52,40 @@
     margin-bottom: 1rem;
 }
 
-.home__description {
+.home__quote {
     margin-bottom: 2rem;
     color: var(--title-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.home__quote-content {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.home__lquote,
+.home__rquote {
+    position: absolute;
+    font-size: 2rem;
+}
+
+.home__rquote {
+    bottom: -1rem;
+    right: -2rem;
+}
+
+.home__lquote {
+    top: -1rem;
+    left: -2rem;
+}
+
+.home__quote-author {
+    font-style: italic;
+    color: var(--text-color-light);
 }
 
 .home__cards {
@@ -303,6 +334,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .home__bg {
+        object-position: 0 5vh;
+    }
+    
     .home__cards {
         grid-template-columns: repeat(2, 240px);
     }
@@ -376,8 +411,19 @@
         font-size: var(--h2-font-size);
     }
 
-    .home__description {
-        margin-bottom: 2.5rem;
+    .home__quote {
+        margin-block: 2rem 2.5rem;
+        align-items: flex-start;
+    }
+
+    .home__lquote {
+        top: -2rem;
+        left: 0;
+    }
+
+    .home__rquote {
+        bottom: -2rem;
+        right: 0;
     }
 
     .home__cards {
@@ -453,5 +499,11 @@
 
     .join__description {
         margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .home__bg {
+        object-position: 0 -10vh;
     }
 }
