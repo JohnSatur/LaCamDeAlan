@@ -1,14 +1,18 @@
 .footer {
     padding-block: 2.5rem;
     background-image: url('../../../assets/img/alan-alvarez-3.jpg');
-    // background-position: -20rem 0rem;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.footer__container {
+    margin: 0 auto;
+}
+
 .footer__content {
     row-gap: 3.5rem;
-}
+}   
 
 .footer__header {
     display: flex;

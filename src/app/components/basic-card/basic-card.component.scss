@@ -1,0 +1,40 @@
+.home__card {
+    position: relative;
+    overflow: hidden;
+    height: 200px; // *
+
+    &:hover .home__card-img {
+        transform: scale(1.2);
+    }
+}
+
+.home__card-img {
+    width: 100%; // *
+    height: 100%; // *
+    object-fit: cover; // *
+    transition: transform .4s;
+}
+
+.home__card-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 0%) 125%);
+}
+
+.home__card-title {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    font-size: var(--h3-font-size);
+    z-index: 1;
+}
+
+@media screen and (min-width: 1152px) {
+    .home__card-title {
+        left: 1.5rem;
+        bottom: 1.5rem;
+    }
+}

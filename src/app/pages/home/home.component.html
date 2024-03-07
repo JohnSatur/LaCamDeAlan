@@ -26,29 +26,10 @@
             </div>
 
             <div class="home__cards grid">
-                <article class="home__card">
-                    <img src="../../../assets/img/rrss1.jpg" alt="Home Image" class="home__card-img" data-aos="flip-up" data-aos-duration="1000">
-                    <h3 class="home__card-title">Sociales</h3>
-                    <div class="home__card-shadow"></div>
-                </article>
-
-                <article class="home__card">
-                    <img src="../../../assets/img/retrato1.jpg" alt="Home Image" class="home__card-img" data-aos="flip-up" data-aos-duration="1000">
-                    <h3 class="home__card-title">Retrato</h3>
-                    <div class="home__card-shadow"></div>
-                </article>
-
-                <article class="home__card">
-                    <img src="../../../assets/img/budoir1.jpg" alt="Home Image" class="home__card-img" data-aos="flip-up" data-aos-duration="1000">
-                    <h3 class="home__card-title">Budoir</h3>
-                    <div class="home__card-shadow"></div>
-                </article>
-
-                <article class="home__card">
-                    <img src="../../../assets/img/producto2.jpg" alt="Home Image" class="home__card-img" data-aos="flip-up" data-aos-duration="1000">
-                    <h3 class="home__card-title">Producto</h3>
-                    <div class="home__card-shadow"></div>
-                </article>
+                <app-basic-card *ngFor="let card of cards" [title]="card.title" [imgUrl]="card.imgURL" data-aos="flip-up" data-aos-duration="1000"></app-basic-card>
+            </div>
+            <div class="home__cards-2 grid">
+                <app-basic-card *ngFor="let card of cardsCam" [title]="card.title" [imgUrl]="card.imgURL" data-aos="flip-up" data-aos-duration="1000"></app-basic-card>
             </div>
        </div>
     </section>
@@ -78,89 +59,7 @@
         <h2 class="section__title" data-aos="fade-zoom-in" data-aos-duration="500">Lugares inolvidables de<br>México para el mundo</h2>
 
         <div class="popular__container container grid" >
-            <article class="popular__card" data-aos="fade-zoom-in">
-                <div class="popular__image">
-                    <img src="../../../assets/img/teotihuacan3.jpg" alt="Popular image" class="popular__img">
-                    <div class="popular__shadow"></div>
-                </div>
-
-                <h2 class="popular__title">Teotihuacán</h2>
-
-                <div class="popular__location">
-                    <i class="ri-map-pin-line"></i>
-                    <span>Ciudad de México</span>
-                </div>
-            </article>
-
-            <article class="popular__card" data-aos="fade-zoom-in">
-                <div class="popular__image">
-                    <img src="../../../assets/img/popocatepetl.jpg" alt="Popular image" class="popular__img">
-                    <div class="popular__shadow"></div>
-                </div>
-
-                <h2 class="popular__title">Popocatepetl</h2>
-
-                <div class="popular__location">
-                    <i class="ri-map-pin-line"></i>
-                    <span>Puebla</span>
-                </div>
-            </article>
-
-            <article class="popular__card" data-aos="fade-zoom-in">
-                <div class="popular__image">
-                    <img src="../../../assets/img/cholula.jpg" alt="Popular image" class="popular__img">
-                    <div class="popular__shadow"></div>
-                </div>
-
-                <h2 class="popular__title">Cholula</h2>
-
-                <div class="popular__location">
-                    <i class="ri-map-pin-line"></i>
-                    <span>Puebla</span>
-                </div>
-            </article>
-            
-            <article class="popular__card" data-aos="fade-zoom-in">
-                <div class="popular__image">
-                    <img src="../../../assets/img/latino.jpg" alt="Popular image" class="popular__img">
-                    <div class="popular__shadow"></div>
-                </div>
-
-                <h2 class="popular__title">Torre Latinoamericana</h2>
-
-                <div class="popular__location">
-                    <i class="ri-map-pin-line"></i>
-                    <span>Ciudad de México</span>
-                </div>
-            </article>
-
-            <article class="popular__card" data-aos="fade-zoom-in">
-                <div class="popular__image">
-                    <img src="../../../assets/img/bellas-artes.jpg" alt="Popular image" class="popular__img">
-                    <div class="popular__shadow"></div>
-                </div>
-
-                <h2 class="popular__title">Palacio de Bellas Artes</h2>
-
-                <div class="popular__location">
-                    <i class="ri-map-pin-line"></i>
-                    <span>Ciudad de México</span>
-                </div>
-            </article>
-
-            <article class="popular__card" data-aos="fade-zoom-in">
-                <div class="popular__image">
-                    <img src="../../../assets/img/janitzio.jpg" alt="Popular image" class="popular__img">
-                    <div class="popular__shadow"></div>
-                </div>
-
-                <h2 class="popular__title">Janitzio</h2>
-
-                <div class="popular__location">
-                    <i class="ri-map-pin-line"></i>
-                    <span>Michoacán</span>
-                </div>
-            </article>
+            <app-location-card *ngFor="let locationCard of locationCards" [title]="locationCard.title" [location]="locationCard.location" [imgURL]="locationCard.imgURL"></app-location-card>
         </div>
     </section>
     
